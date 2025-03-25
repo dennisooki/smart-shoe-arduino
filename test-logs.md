@@ -18,6 +18,9 @@
   - **Sensor 4 (Rear)**: 
     - 20 cm (actual: 20 cm), 50 cm (actual: 50 cm), 101 cm (actual: 100 cm)
 - **Observations**: All sensors performed within the expected accuracy range of ±5 cm. [2025-03-18 21:41:00] Booting up system for Sensor Accuracy Test...
+
+```
+[2025-03-18 21:41:00] Booting up system for Sensor Accuracy Test...
 [2025-03-18 21:43:00] Starting Sensor Accuracy Test...
 [2025-03-18 21:43:05] Initializing sensors... OK
 [2025-03-18 21:43:10] Sensor 1 (Front) - Measuring distance...
@@ -36,9 +39,8 @@
 [2025-03-18 21:43:42] Sensor 4: Distance = 20 cm (Actual: 20 cm) - Perfect match.
 [2025-03-18 21:43:45] Sensor 4: Distance = 50 cm (Actual: 50 cm) - No issues here.
 [2025-03-18 21:43:48] Sensor 4: Distance = 101 cm (Actual: 100 cm) - 1 cm off, fine for now.
-[2025-03-18 21:43:50] Test Completed. All sensors within ±2 cm - acceptable range. Moving on!Minor deviations were observed but are acceptable for the system's requirements.
-
-
+[2025-03-18 21:43:50] Test Completed. All sensors within ±2 cm - acceptable range. Moving on!
+```
 #### **Test 2: Motor Response**
 
 - **Objective**: Ensure that each vibration motor responds correctly to sensor inputs based on obstacle proximity.
@@ -53,6 +55,7 @@
   - **Motor 3 (Right)**: Vibrated as expected across all distances.
   - **Motor 4 (Rear)**: Vibrated, but the intensity was inconsistent, particularly at closer distances.
 - **Observations**: Motors 1, 2, and 3 performed as expected. Motor 4's intensity was lower than anticipated for close obstacles, indicating a need for further calibration or adjustment in the PWM mapping.
+```
 [2025-03-19 10:28:00] Preparing for Motor Response Test...
 [2025-03-19 10:30:00] Starting Motor Response Test...
 [2025-03-19 10:30:05] Simulating obstacle at 30 cm for Sensor 1 (Front)
@@ -70,6 +73,7 @@
 [2025-03-19 10:30:34] Motor 4 (Rear): PWM Intensity = 200 - Fixed! Strong vibration now.
 [2025-03-19 10:30:36] Adjustment confirmed. Motors 1-3 good, Motor 4 needed tweak.
 [2025-03-19 10:30:38] Test Completed. All motors responding correctly now.
+```
 
 #### **Test 3: Power Stability**
 
@@ -83,6 +87,7 @@
   - **Idle State**: 5.02V
   - **Operational State**: Voltage fluctuated between 4.98V and 5.05V
 - **Observations**: The voltage remained stable within the acceptable range, ensuring reliable operation of the system. No significant drops or spikes were observed during testing.
+```
 [2025-03-19 10:58:00] Setting up for Power Stability Test...
 [2025-03-19 11:00:00] Starting Power Stability Test...
 [2025-03-19 11:00:05] System idle - checking baseline voltage.
@@ -94,6 +99,7 @@
 [2025-03-19 11:00:20] Voltage at 5V rail: 5.02V - Stabilized, looking good.
 [2025-03-19 11:00:22] No major fluctuations - within ±0.05V tolerance.
 [2025-03-19 11:00:25] Test Completed. Power supply holding steady under load!
+```
 
 #### **Test 4: System Integration**
 
@@ -109,6 +115,8 @@
   - **Right Obstacle**: Right motor vibrated appropriately.
   - **Rear Obstacle**: Rear motor vibrated, but the intensity was lower than expected for close proximity.
 - **Observations**: The system successfully detected obstacles in all directions. However, the rear motor's feedback was less intense than desired for close obstacles, suggesting a need for fine-tuning the vibration intensity mapping for that motor.
+
+```
 [2025-03-19 19:28:00] Getting ready for System Integration Test...
 [2025-03-19 19:30:00] Starting System Integration Test...
 [2025-03-19 19:30:05] Powering on the system... All green.
@@ -131,3 +139,4 @@
 [2025-03-19 19:30:49] Motor 4 (Rear): PWM Intensity = 200 - Back on track!
 [2025-03-19 19:30:52] Adjustment worked. System fully operational.
 [2025-03-19 19:30:55] Test Completed. All components syncing after calibration.
+```
