@@ -19,7 +19,6 @@
     - 20 cm (actual: 20 cm), 50 cm (actual: 50 cm), 101 cm (actual: 100 cm)
 - **Observations**: All sensors performed within the expected accuracy range of ±5 cm. Minor deviations were observed but are acceptable for the system's requirements.
 
----
 
 #### **Test 2: Motor Response**
 
@@ -36,7 +35,6 @@
   - **Motor 4 (Rear)**: Vibrated, but the intensity was inconsistent, particularly at closer distances.
 - **Observations**: Motors 1, 2, and 3 performed as expected. Motor 4's intensity was lower than anticipated for close obstacles, indicating a need for further calibration or adjustment in the PWM mapping.
 
----
 
 #### **Test 3: Power Stability**
 
@@ -50,8 +48,6 @@
   - **Idle State**: 5.02V
   - **Operational State**: Voltage fluctuated between 4.98V and 5.05V
 - **Observations**: The voltage remained stable within the acceptable range, ensuring reliable operation of the system. No significant drops or spikes were observed during testing.
-
----
 
 #### **Test 4: System Integration**
 
@@ -68,4 +64,3 @@
   - **Rear Obstacle**: Rear motor vibrated, but the intensity was lower than expected for close proximity.
 - **Observations**: The system successfully detected obstacles in all directions. However, the rear motor's feedback was less intense than desired for close obstacles, suggesting a need for fine-tuning the vibration intensity mapping for that motor.
 
----
